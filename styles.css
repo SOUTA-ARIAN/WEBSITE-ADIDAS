@@ -10,31 +10,38 @@ main {
     padding: 120px 5% 60px;
     background-color: #f5f5f500;
 }
+
 .breadcrumb {
     display: flex;
     align-items: center;
     font-size: 14px;
     margin-bottom: 16px;
 }
+
 .breadcrumb i {
     margin-right: 8px;
 }
+
 .breadcrumb a {
     text-decoration: underline;
     color: black;
     margin-right: 8px;
 }
+
 .breadcrumb span {
     color: black;
 }
+
 h1 {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 8px;
 }
+
 .product-count {
     color: #888;
 }
+
 .filter-bar {
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
@@ -43,6 +50,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .filter-bar button {
     border: 1px solid #e5e5e5;
     padding: 8px 16px;
@@ -50,6 +58,7 @@ h1 {
     background: none;
     cursor: pointer;
 }
+
 .filter-bar button i {
     margin-left: 8px;
 }
