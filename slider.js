@@ -19,15 +19,6 @@ const swiper = new Swiper('.wrapper', {
     breakpoints: {
         0: {
             slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 2,
-        },
-        1024: {
-            slidesPerView: 3,
-        },
-        1200: {
-            slidesPerView: 5,
         }
     }
   });
