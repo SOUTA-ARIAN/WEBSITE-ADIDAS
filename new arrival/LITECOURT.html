@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body data-product-id="LITERCOURT">
     <!-- Navigation for new-arrivals.html -->
     <nav class="navbar">
         <div class="nav-left">
@@ -253,33 +253,39 @@
     <div class="product-detail-container">
       <div class="product-images">
         <div class="main-image">
-          <img src="https://via.placeholder.com/400x400?text=Product+Image" alt="Classic 3-Bar Logo Backpack">
+          <img id="mainProductImage" src="https://www.adidas.co.id/media/catalog/product/cache/da73f7d26ad11f1980ada40c1f6e78fa/j/r/jr0026_2_footwear_photography_side20lateral20view_grey.jpg" alt="Classic 3-Bar Logo Backpack">
         </div>
         <div class="thumbnails">
-          <img src="https://via.placeholder.com/80x80?text=Thumb1" alt="Thumbnail 1" class="thumb selected" data-img="https://via.placeholder.com/400x400?text=Product+Image+1">
-          <img src="https://via.placeholder.com/80x80?text=Thumb2" alt="Thumbnail 2" class="thumb" data-img="https://via.placeholder.com/400x400?text=Product+Image+2">
-          <img src="https://via.placeholder.com/80x80?text=Thumb3" alt="Thumbnail 3" class="thumb" data-img="https://via.placeholder.com/400x400?text=Product+Image+3">
-          <img src="https://via.placeholder.com/80x80?text=Thumb4" alt="Thumbnail 4" class="thumb" data-img="https://via.placeholder.com/400x400?text=Product+Image+4">
+          <img src="https://www.planetsports.asia/media/catalog/product/cache/42ffd081cc5089087c937c1cd93e7420/0/1/01-ADIDAS-FFSSEADI5-ADIJR0027-White.jpg" alt="Thumbnail 1" class="thumb" data-img="https://www.planetsports.asia/media/catalog/product/cache/5916ecf3714e9284afcad6b81e33eb02/0/1/01-ADIDAS-FFSSEADI5-ADIJR0027-White.jpg">
+          <img src="https://www.planetsports.asia/media/catalog/product/cache/42ffd081cc5089087c937c1cd93e7420/0/3/03-ADIDAS-FFSSEADI5-ADIJR0027-White.jpg" alt="Thumbnail 2" class="thumb" data-img="https://www.planetsports.asia/media/catalog/product/cache/5916ecf3714e9284afcad6b81e33eb02/0/3/03-ADIDAS-FFSSEADI5-ADIJR0027-White.jpg">
+          <img src="https://www.planetsports.asia/media/catalog/product/cache/42ffd081cc5089087c937c1cd93e7420/0/5/05-ADIDAS-FFSSEADI5-ADIJR0027-White.jpg" alt="Thumbnail 3" class="thumb" data-img="https://www.planetsports.asia/media/catalog/product/cache/5916ecf3714e9284afcad6b81e33eb02/0/5/05-ADIDAS-FFSSEADI5-ADIJR0027-White.jpg">
+          <img src="https://www.planetsports.asia/media/catalog/product/cache/42ffd081cc5089087c937c1cd93e7420/0/6/06-ADIDAS-FFSSEADI5-ADIJR0027-White.jpg" alt="Thumbnail 4" class="thumb" data-img="https://www.planetsports.asia/media/catalog/product/cache/5916ecf3714e9284afcad6b81e33eb02/0/6/06-ADIDAS-FFSSEADI5-ADIJR0027-White.jpg">
         </div>
       </div>
       <div class="product-info">
-        <h2>Campus 00s</h2>
-        <div class="product-price">Rp 1.299.000</div>
+        <h2 id="detail-title">SEPATU LITECOURT</h2>
+        <div id="detail-price" class="product-price">Rp. 950.000</div>
         <div class="product-size">
           <label for="size">Select Size</label>
           <select id="size">
-            <option>ONE SIZE</option>
+            <option>US 7</option>
+            <option>US 7,5</option>
+            <option>US 8</option>
+            <option>US 8,5</option>
+            <option>US 9</option>
+            <option>US 9,5</option>
           </select>
         </div>
-        <button class="add-to-cart">ADD TO CART</button>
+        <button id="add-to-cart" class="add-to-cart">ADD TO CART</button>
         <div class="product-details">
-          <h3>Product Details</h3>
-          <p>A classic backpack with the iconic 3-Stripes design. Made with durable materials and featuring multiple compartments for organization.</p>
+          <h3>SEPATU LITECOURT</h3>
+          <p>Sepatu adidas ini menawarkan tampilan sporty yang didesain untuk segala macam petualangan. Upper berbahan kulit sintetis yang tahan lama dan stylish, serta lidah dan heel tab berlapis busa menambahkan kenyamanan. Midsole yang terdiri dari satu bagian dan outsole yang memberikan sensasi seringan bulu. Produk ini mengandung sedikitnya 20% material daur ulang. Dengan menggunakan kembali material yang telah dibuat, kami membantu mengurangi limbah dan ketergantungan kita pada sumber daya terbatas dan mengurangi jejak karbon dari produk yang kita buat.</p>
         </div>
       </div>
     </div>
     <!-- Product Detail Layout End -->
     <!-- Lanjutkan konten lain di bawah jika ada -->
     <script src="/product.js"></script>
+    <script src="/addcart.js"></script>
 </body>
 </html>

@@ -313,6 +313,7 @@ h1 {
     width: 100%;
     height: auto;
     margin-bottom: 1rem;
+    border: solid 1px;
 }
 
 .product-card h3 {
@@ -1137,7 +1138,7 @@ h1 {
     display: flex;
     gap: 48px;
     margin: 40px 0 0 0;
-    padding: 140px 5%;
+    padding: 110px 4%;
   }
   .product-images {
     flex: 1;
