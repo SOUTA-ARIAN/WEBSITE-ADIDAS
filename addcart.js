@@ -9,6 +9,7 @@ function addToCart(product) {
         cart.push({...product, qty: 1});
     }
     localStorage.setItem('cart', JSON.stringify(cart));
+    // Menggunakan alert() standar browser
     alert('Produk masuk ke keranjang!');
 }
 
@@ -27,7 +28,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 size: document.getElementById('size') ? document.getElementById('size').value : 'ONE SIZE'
             };
             addToCart(product);
-        });
+        }); 
+    }
+    if (btn) {
         btn.addEventListener('click', function() {
             // Ambil data produk dari halaman
             const product = {
@@ -40,6 +43,8 @@ document.addEventListener('DOMContentLoaded', function() {
             };
             addToCart(product);
         });
+    }
+    if (btn) {
         btn.addEventListener('click', function() {
             // Ambil data produk dari halaman
             const product = {
@@ -52,6 +57,8 @@ document.addEventListener('DOMContentLoaded', function() {
             };
             addToCart(product);
         });
+    }
+    if (btn) {
         btn.addEventListener('click', function() {
             // Ambil data produk dari halaman
             const product = {
@@ -64,6 +71,8 @@ document.addEventListener('DOMContentLoaded', function() {
             };
             addToCart(product);
         });
+    }
+    if (btn) {
         btn.addEventListener('click', function() {
             // Ambil data produk dari halaman
             const product = {
@@ -76,6 +85,8 @@ document.addEventListener('DOMContentLoaded', function() {
             };
             addToCart(product);
         });
+    }
+    if (btn) {
         btn.addEventListener('click', function() {
             // Ambil data produk dari halaman
             const product = {
@@ -88,6 +99,8 @@ document.addEventListener('DOMContentLoaded', function() {
             };
             addToCart(product);
         });
+    }
+    if (btn) {
         btn.addEventListener('click', function() {
             // Ambil data produk dari halaman
             const product = {
@@ -100,6 +113,8 @@ document.addEventListener('DOMContentLoaded', function() {
             };
             addToCart(product);
         });
+    }
+    if (btn) {
         btn.addEventListener('click', function() {
             // Ambil data produk dari halaman
             const product = {
@@ -112,6 +127,8 @@ document.addEventListener('DOMContentLoaded', function() {
             };
             addToCart(product);
         });
+    }
+    if (btn) {
         btn.addEventListener('click', function() {
             // Ambil data produk dari halaman
             const product = {
@@ -124,6 +141,8 @@ document.addEventListener('DOMContentLoaded', function() {
             };
             addToCart(product);
         });
+    }
+    if (btn) {
         btn.addEventListener('click', function() {
             // Ambil data produk dari halaman
             const product = {
