@@ -95,21 +95,18 @@ h1 {
     left: 50%;
     transform: translateX(-50%);
 }
-
 .nav-links {
     display: flex;
     list-style: none;
     margin: 0;
     height: 100%;
 }
-
 .nav-item {
     position: relative;
     height: 80px;
     display: flex;
     align-items: center;
 }
-
 .nav-item > a {
     text-decoration: none;
     color: #000;
@@ -124,7 +121,6 @@ h1 {
     letter-spacing: 1px;
     transition: color 0.3s ease;
 }
-
 .nav-item > a i {
     font-size: 10px;
     transition: transform 0.3s ease;
@@ -1123,7 +1119,7 @@ h1 {
      font-size: 0.81rem;
      font-weight: 600;
      text-decoration: none;
-     background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+     background: linear-gradient(135deg, #39393b 0%, #6d6c6e 100%);
      box-shadow:  0 8px 15px rgba(99, 102, 241, 0.2);
      transition: all 0.3s ease;
 }
