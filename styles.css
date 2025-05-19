@@ -1119,7 +1119,7 @@ h1 {
      font-size: 0.81rem;
      font-weight: 600;
      text-decoration: none;
-     background: linear-gradient(135deg, #39393b 0%, #6d6c6e 100%);
+     background: linear-gradient(135deg, #000000 0%, #6d6c6e 100%);
      box-shadow:  0 8px 15px rgba(99, 102, 241, 0.2);
      transition: all 0.3s ease;
 }
