@@ -277,6 +277,10 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box ;
+    font-family: sans-serif;
+    position: relative;
 }
 
 .banner video {
@@ -284,6 +288,37 @@ h1 {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    z-index: 1;
+}
+
+/* Gaya untuk konten di atas video */
+.banner-shop-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+  /* Gaya untuk memposisikan di kiri bawah */
+  position: absolute;
+  z-index: 15;
+  bottom: 40px;
+  left: 40px;
+  transform: none;
+}
+
+.banner-shop-button:hover {
+  background-color: #f0f0f0; /* Efek hover sedikit abu-abu */
+}
+
+.banner-shop-button span.arrow {
+  margin-left: 10px; /* Jarak antara teks dan panah */
+  font-size: 1.2em; /* Sesuaikan ukuran panah */
+  vertical-align: middle;
 }
 
 /* Featured Products */
@@ -375,39 +410,107 @@ h1 {
 }
 
 /* Footer */
-.footer {
+.site-footer {
     background-color: black;
     color: white;
-    padding: 5rem 5% 2rem;
+    padding: 40px 20px;
+    font-size: 0.9em; /* Ukuran font default footer */
 }
 
-.footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
+.footer-newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #333;
 }
 
-.footer-section h4 {
-    margin-bottom: 1rem;
+.footer-newsletter h2 {
+    text-align: left;
+    position: absolute;
+    z-index: 15px;
+    left: 40px;
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-.footer-section ul {
+.footer-newsletter button {
+    position: absolute;
+    right: 40px;
+    text-align: end;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-newsletter button:hover {
+    background-color: #ddd;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    margin: 10px;
+    min-width: 150px;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase; /* Huruf besar */
+}
+
+.footer-column ul {
     list-style: none;
+    padding: 0;
 }
 
-.footer-section ul li {
-    margin-bottom: 0.5rem;
+.footer-column li {
+    margin-bottom: 8px;
 }
 
-.footer-section a {
-    color: #ccc;
+.footer-column a {
+    color: white;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.footer-section a:hover {
-    color: white;
+.footer-column a:hover {
+    color: #ccc;
+}
+
+/* Responsif untuk footer */
+@media (max-width: 768px) {
+    .footer-newsletter {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-newsletter h2 {
+        margin-bottom: 15px;
+        font-size: 1.3em; /* Sesuaikan ukuran font */
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-column {
+        margin: 20px 10px;
+        text-align: center;
+    }
 }
 
 .social-links {
